@@ -1,28 +1,160 @@
-*{
-    background-color: #E1E2E9;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.painel{
-   height: 100vh;
-   width: 100%;
-   display: flex;
-   justify-content:baseline;
-   
-   
+body {
+  font-family: Arial, sans-serif;
 }
 
-.back{
-    
-    color: #004380;
-    font-size: 100px;
-    padding-left: 1000px;
-    padding-top: 1000px;
-   
+.pagina {
+  display: flex;
+  width: 100%;
+  height: 100vh;
 }
 
-.gestao{
-    font-size: 190px;
-    color: #646363;
-    padding-left: 500px;
+/* IMAGEM */
+
+.imagem {
+  width: 66%;
+  position: relative;
 }
 
+.imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Panel Status */
+
+.status {
+  position: absolute;
+  bottom: 30px;
+  left: 329px;
+
+  width: 530px;
+
+  background: white;
+  padding: 20px;
+
+  border-radius: 10px;
+}
+
+.status-header {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 10px;
+}
+
+.status h3 {
+  color: #075294;
+  font-size: 30px;
+  margin-bottom: px;
+}
+
+.status img {
+  width: 25px;
+  height: 20px;
+}
+
+.status p {
+  color: #666;
+  font-size: 18px;
+}
+
+/* Painel Login */
+
+.login {
+  width: 34%;
+  padding: 60px;
+
+  background: #f8f9ff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login h1 {
+  color: #075294;
+  text-align: center;
+  font-size: 40px;
+}
+
+.login > p {
+  text-align: center;
+  color: #777;
+  font-size: 30px;
+  margin-top: 8px;
+  margin-bottom: 40px;
+}
+
+/* Campos de Digitação */
+
+.login label {
+  font-size: 12px;
+  color: #181717;
+
+  margin-bottom: 6px;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+  width: 100%;
+
+  padding: 12px;
+
+  border: 1px solid #d5d8e0;
+  border-radius: 6px;
+
+  margin-bottom: 18px;
+
+  background-color: #f0f4f8;
+}
+
+/* Opção Lembrar */
+
+.lembrar {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  font-size: 16px;
+  color: #555;
+
+  margin-bottom: 20px;
+}
+
+/* Botão Entrar */
+
+button {
+  width: 100%;
+
+  padding: 12px;
+
+  background: #075294;
+  color: white;
+
+  border: none;
+  border-radius: 5px;
+
+  font-size: 15px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+/* Rodape */
+
+small {
+  text-align: center;
+
+  color: #888;
+  font-size: 10px;
+
+  margin-top: 50px;
+}

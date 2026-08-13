@@ -1,26 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Login - Senac Parking</title>
-</head>
-<body>
-    <div>
-        <div class="painel">
-            <img src="Imagem/Professional parking facility background.png" alt="Imagem do estacionamento">
-            <div = class="status">
-                
-               
-            </div>
-            <div class="back">
-                 <h1>Senac CEP Papaléo</h1>
-                 <h1 class="gestao">Gestão de estacionamento</h1>
-            </div>
-        </div>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Senac Parking</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
+  <body>
     
-</body>
+    <div class="pagina">
+      <!-- Painel da Imagem -->
+      <div class="imagem">
+        <img
+          src="/Teste-senac2/Imagem/Professional parking facility background.png"
+        />
+
+        <div class="status">
+          <div class="status-header">
+            <img src="/Teste-senac2/Imagem/Icon-carro.svg" alt="Carro" />
+            <h3>Status em Tempo Real</h3>
+          </div>
+
+          <p>
+            O sistema Papaléo Parking otimiza o fluxo de entrada e saída,
+            garantindo segurança e agilidade.
+          </p>
+        </div>
+      </div>
+
+      <!-- Painel de Login -->
+      <div class="login">
+        <h1>Senac CEP Papaléo</h1>
+
+        <p>Gestão de Estacionamento</p>
+
+        <label>CPF ou CNH</label>
+        <input type="text" placeholder="000.000.000-00" />
+
+        <label>Senha</label>
+        <input type="password" placeholder="••••••••" />
+
+        <div class="lembrar">
+          <input type="checkbox" />
+          <span>Lembrar neste dispositivo</span>
+        </div>
+
+        <button>Entrar</button>
+
+        <small>Todos os direitos reservados.</small>
+      </div>
+    </div>
+  </body>
 </html>
