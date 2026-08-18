@@ -148,6 +148,10 @@ button {
   cursor: pointer;
 }
 
+button:active {
+  background-color: #033056;
+}
+
 /* Rodape */
 
 small {
