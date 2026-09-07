@@ -4,6 +4,18 @@ function entrar() {
 
   if (usuario === "admin" && senha === "123") {
     window.location.href = "pages/cadastro.html";
+  } else if (usuario === "" && senha === "") {
+    document.getElementById("mensagem").textContent =
+      "Digite nos campos vazios";
+    return;
+  } else if (usuario === "") {
+    document.getElementById("mensagem").textContent =
+      "Digite seu CPF ou CNH";
+    return;
+  } else if (senha === "") {
+    document.getElementById("mensagem").textContent =
+      "Digite a senha";
+    return;
   } else {
     document.getElementById("mensagem").textContent =
       "Usuário ou senha incorretos!";

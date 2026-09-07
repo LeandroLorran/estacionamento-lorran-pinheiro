@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alertas - Senac Parking</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/Alerta.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jockey+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main>
+      <div class="pagina">
+        <aside>
+          <div class="tituloAside">
+            <div class="imagemtituloaside">
+              <img src="../Teste-senac2/Imagem/Icon-carro-branco.svg" alt="" />
+            </div>
+
+            <div class="nomeLogoAside">
+              <h3>Senac Cep</h3>
+              <h4>PAPALÉO PARKING</h4>
+            </div>
+          </div>
+          <nav>
+            <div class="inconsNav">
+              <img src="../Teste-senac2/Imagem/Icon-dashboard.svg" alt="" />
+              <a href="#">Dashboard</a>
+            </div>
+            <div class="inconsNav">
+              <img
+                src="../Teste-senac2/Imagem/Icon-consultar-usuarios.svg"
+                alt=""
+              />
+              <a href="#">Consulta de Usuário</a>
+            </div>
+            <div class="inconsNav">
+              <img
+                src="../Teste-senac2/Imagem/Icon-registrar-entradas-e-saidas.svg"
+                alt=""
+              />
+              <a href="#">Registro de Entrada/Saída</a>
+            </div>
+            <div class="inconsNav">
+              <img
+                src="../Teste-senac2/Imagem/Icon-cadastro-rapido-cinza.svg"
+                alt=""
+              />
+              <a href="cadastro.html">Cadastro Rápido</a>
+            </div>
+            <div class="inconsNav">
+              <img src="../Teste-senac2/Imagem/Icon-historico.svg" alt="" />
+              <a href="#">Histórico</a>
+            </div>
+            <div class="inconsNav cadastroRapido">
+              <img src="../Teste-senac2/Imagem/Icon-alertas-azul.svg" alt="" />
+              <a href="#">Alertas</a>
+            </div>
+          </nav>
+
+          <hr />
+          <div class="buttonSair">
+            <img src="../Teste-senac2/Imagem/Icon-sair.svg" alt="" />
+            <button onclick="sair()" class="buttonSair">Sair</button>
+          </div>
+        </aside>
+        <div class="ParteCentral">
+          <header>
+            <h2>Gestão de Estacionamento</h2>
+
+            <div class="perfilusuario">
+              <hr />
+              <div>
+                <h3>Admin Portaria</h3>
+                <p>OPERADOR</p>
+              </div>
+            </div>
+            <img
+              src="../Teste-senac2/Imagem/Foto de Perfil do Administrador.png"
+              alt=""
+            />
+          </header>
+
+          <div class="conteudo">
+            <div class="tituloConteudo">
+              <h1>Central de Alertas</h1>
+              <p>
+                Gerencie comunicações críticas e operacionais em tempo real.
+              </p>
+            </div>
+            <div class="divPrioridades">
+              <div class="altaPrioridade cardPrioridade">
+                <img src="../Teste-senac2/Imagem/Icon-Prioridade.svg" alt="" />
+                <div>
+                  <h3>ALTA PRIORIDADE</h3>
+                  <strong class="numeroPrioridade">04</strong>
+                </div>
+              </div>
+              <div class="divPendestes cardPrioridade">
+                <img src="../Teste-senac2/Imagem/Icon-Pendentes.svg" alt="" />
+                <div>
+                  <h3>PENDENTES</h3>
+                  <strong class="numeroPendente">12</strong>
+                </div>
+              </div>
+              <div class="divResolvidos cardPrioridade">
+                <img src="../Teste-senac2/Imagem/Icon-Resolvidos.svg" alt="" />
+                <div>
+                  <h3>RESOLVIDOS HOJE</h3>
+                  <strong class="numeroResolvidos">28</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="botoesAtalho">
+              <button class="botoes">Todos</button>
+              <button class="botoes">Pendentes</button>
+              <button class="botoes">Resolvidos</button>
+            </div>
+
+            <div class="divNotificacoes">
+              <div class="notificacao1 notificacao">
+                <div class="textoNotificao">
+                  <div>
+                    <h4>ALTA PRIORIDADE</h4>
+                    <div>
+                      <img
+                        src="../Teste-senac2/Imagem/Icon-relogio.svg"
+                        alt=""
+                      />
+                      <p>há 12 minutos</p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img src="../Teste-senac2/Imagem/Icon-Check.svg" alt="" />
+                    <img
+                      class="trespontinho"
+                      src="../Teste-senac2/Imagem/Icon-Pontinhos.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <h2>Veículo Não Autorizado - Setor A2</h2>
+                <p class="texto">
+                  Placa ABC-1234 detectada tentando saída sem validação de
+                  ticket. Segurança acionada para o local.
+                </p>
+                <div>
+                  <img
+                    src="../Teste-senac2/Imagem/Icon-Destinatario.svg"
+                    alt=""
+                  />
+                  <p>Destinatários: Equipe de Segurança, Supervisão</p>
+                </div>
+              </div>
+
+              <div class="notificacao2 notificacao">
+                <div class="textoNotificao">
+                  <div>
+                    <h4>MÉDIA PRIORIDADE</h4>
+                    <div>
+                      <img
+                        src="../Teste-senac2/Imagem/Icon-relogio.svg"
+                        alt=""
+                      />
+                      <p>há 45 minutos</p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img src="../Teste-senac2/Imagem/Icon-Check.svg" alt="" />
+                    <img
+                      class="trespontinho"
+                      src="../Teste-senac2/Imagem/Icon-Pontinhos.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <h2>Manutenção Necessária - Elevador 03</h2>
+                <p class="texto">
+                  Relatado ruído excessivo durante subida. Agendar técnico para verificação preventiva até o final do turno.
+                </p>
+                <div>
+                  <p>Destinatário: Equipe de Manutenção</p>
+                </div>
+              </div>
+
+              <div class="notificacao3 notificacao">
+                <div class="textoNotificao">
+                  <div>
+                    <h4>RESOLVIDO</h4>
+                    <div>
+                      <img
+                        src="../Teste-senac2/Imagem/Icon-cheked.svg"
+                        alt=""
+                      />
+                      <p>Resolvido há 2h</p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img src="../Teste-senac2/Imagem/Icon-Check.svg" alt="" />
+                    <img
+                      class="trespontinho"
+                      src="../Teste-senac2/Imagem/Icon-Pontinhos.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <h2>Falta de Papel - Totem Entrada 01</h2>
+                <p class="texto">
+                 Papel térmico de impressão de tickets reposto pelo colaborador Silva.
+                </p>
+               
+              </div>
+
+              <div class="notificacao4 notificacao">
+                <div class="textoNotificao">
+                  <div>
+                    <h4>BAIXA PRIORIDADE</h4>
+                    <div>
+                      <img
+                        src="../Teste-senac2/Imagem/Icon-relogio.svg"
+                        alt=""
+                      />
+                      <p>há 3 horas</p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <img src="../Teste-senac2/Imagem/Icon-Check.svg" alt="" />
+                    <img
+                      class="trespontinho"
+                      src="../Teste-senac2/Imagem/Icon-Pontinhos.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <h2>Aviso de Troca de Turno</h2>
+                <p class="texto">
+                  Lembrete: Reunião rápida de alinhamento às 14:00 no auditório.
+                </p>
+                <div>
+                 
+                  <p>Destinatário: Todos os Colaboradores </p>
+                </div>
+              </div>
+
+              
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
