@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro Rápido - Senac Parking</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/cadastro.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jockey+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main>
+      <div class="pagina">
+        <aside>
+          <div class="tituloAside">
+            <div class="imagemtituloaside">
+              <img src="../Teste-senac2/Imagem/Icon-carro-branco.svg" alt="" />
+            </div>
+
+            <div class="nomeLogoAside">
+              <h3>Senac Cep</h3>
+              <h4>PAPALÉO PARKING</h4>
+            </div>
+          </div>
+          <nav>
+            <div class="inconsNav">
+              <img src="../Teste-senac2/Imagem/Icon-dashboard.svg" alt="" />
+              <a href="#">Dashboard</a>
+            </div>
+            <div class="inconsNav">
+              <img
+                src="../Teste-senac2/Imagem/Icon-consultar-usuarios.svg"
+                alt=""
+              />
+              <a href="#">Consulta de Usuário</a>
+            </div>
+            <div class="inconsNav">
+              <img
+                src="../Teste-senac2/Imagem/Icon-registrar-entradas-e-saidas.svg"
+                alt=""
+              />
+              <a href="#">Registro de Entrada/Saída</a>
+            </div>
+            <div class="inconsNav cadastroRapido">
+              <img
+                src="../Teste-senac2/Imagem/Icon-cadastro-rapido.svg"
+                alt=""
+              />
+              <a href="#">Cadastro Rápido</a>
+            </div>
+            <div class="inconsNav">
+              <img src="../Teste-senac2/Imagem/Icon-historico.svg" alt="" />
+              <a href="#">Histórico</a>
+            </div>
+            <div class="inconsNav">
+              <img src="../Teste-senac2/Imagem/Icon-alertas.svg" alt="" />
+              <a href="#">Alertas</a>
+            </div>
+          </nav>
+
+          <hr />
+          <div class="buttonSair">
+            <img src="../Teste-senac2/Imagem/Icon-sair.svg" alt="" />
+            <button class="buttonSair">Sair</button>
+          </div>
+        </aside>
+        <div class="ParteCentral">
+          <header>
+            <h2>Gestão de Estacionamento</h2>
+
+            <div class="perfilusuario">
+              <hr />
+              <div>
+                <h3>Admin Portaria</h3>
+                <p>OPERADOR</p>
+              </div>
+            </div>
+            <img
+              src="../Teste-senac2/Imagem/Foto de Perfil do Administrador.png"
+              alt=""
+            />
+          </header>
+          <div class="titulo">
+            <h1>Cadastro Rapido</h1>
+            <p>Registre novos visitantes de forma ágil e segura</p>
+          </div>
+
+          <div class="divCadastro">
+            <div class="info">
+              <img
+                src="../Teste-senac2/Imagem/Icon-informacoes-pessoais.svg"
+                alt=""
+              />
+              <h3>Informações Pessoais</h3>
+            </div>
+
+            <hr />
+
+            <div class="inputdecima">
+              <label>Nome Completo</label>
+              <input
+                type="text"
+                class="nome"
+                placeholder="Ex: João da Silva Santos"
+              />
+              <div class="inputdecima2">
+                <div>
+                  <label>CNH (Documento)</label>
+                  <input type="cnh" class="escreve" placeholder="00000000000" />
+                </div>
+                <div>
+                  <label>Telefone / WhatsApp</label>
+                  <input
+                    type="telefone"
+                    class="escreve"
+                    placeholder="(11) 99999-9999"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="info infodebaixo">
+              <img
+                src="../Teste-senac2/Imagem/Icon-carro-azul.svg"
+                alt="carro azul"
+              />
+              <h3>Dados do Veículo</h3>
+            </div>
+
+            <hr />
+
+            <div class="divDadosVeiculo">
+              <div class="labDadosVeiculo">
+                <label>Placa</label>
+                <input type="placa" placeholder="ABC-1234" />
+              </div>
+
+              <div class="labDadosVeiculo">
+                <label for="marca">Marca do veículo:</label>
+
+                <select id="marca" name="marca">
+                  <option value="">Selecione a marca</option>
+
+                  <option value="chevrolet">Chevrolet</option>
+                  <option value="fiat">Fiat</option>
+                  <option value="ford">Ford</option>
+                  <option value="volkswagen">Volkswagen</option>
+                  <option value="toyota">Toyota</option>
+                  <option value="honda">Honda</option>
+                  <option value="hyundai">Hyundai</option>
+                  <option value="nissan">Nissan</option>
+                  <option value="renault">Renault</option>
+                  <option value="peugeot">Peugeot</option>
+                  <option value="citroen">Citroën</option>
+                  <option value="jeep">Jeep</option>
+                  <option value="bmw">BMW</option>
+                  <option value="mercedes">Mercedes-Benz</option>
+                  <option value="audi">Audi</option>
+
+                  <option value="yamaha">Yamaha</option>
+                  <option value="honda-motos">Honda</option>
+                  <option value="suzuki">Suzuki</option>
+                  <option value="kawasaki">Kawasaki</option>
+                  <option value="bmw-motos">BMW Motorrad</option>
+                  <option value="ducati">Ducati</option>
+                  <option value="triumph">Triumph</option>
+                  <option value="harley">Harley-Davidson</option>
+                </select>
+              </div>
+              <div class="labDadosVeiculo">
+                <label>Modelo</label>
+                <input type="modelo" placeholder="Ex: Gol, Civic, Corolla" />
+              </div>
+              <div class="labDadosVeiculo">
+                <label>Cor</label>
+                <input type="cor" placeholder="Ex: Branco, Preto, Prata" />
+              </div>
+            </div>
+
+            <div class="divbutoes">
+              <button class="botao1">Limpa Campos</button>
+              <button class="botao2">Cadastrar Visitante <img src="../Teste-senac2/Imagem/Icon-Seta-Button.svg" alt=""></button>
+            </div>
+
+           
+          </div>
+           <footer>
+              <img src="../Teste-senac2/Imagem/Icon-!.svg" alt="">
+              <p>O visitante será automaticamente registrado no sistema como "Aguardando Entrada".</p>
+            </footer>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
