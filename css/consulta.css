@@ -1,0 +1,340 @@
+body {
+  color: #424751;
+  font-family: "Inter", sans-serif;
+}
+
+.pagina {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #e1e2e9;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  border-right: 3px solid #c2c6d3;
+
+  width: 25%;
+  min-height: 100vh;
+
+  .tituloAside {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    .imagemtituloaside {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 50px;
+      background-color: #004380;
+      height: 70px;
+      width: 70px;
+      border-radius: 15px;
+
+      img {
+        width: 35px;
+      }
+    }
+
+    .nomeLogoAside {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 25px;
+      h3 {
+        font-size: 35px;
+        color: #004380;
+      }
+
+      h4 {
+        color: rgb(65, 64, 64);
+      }
+    }
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .inconsNav {
+      display: flex;
+      align-items: center;
+      margin-left: 45px;
+      margin-bottom: 30px;
+      width: 80%;
+      a {
+        color: rgb(65, 64, 64);
+        padding-left: 15px;
+        text-decoration: none;
+      }
+
+      img {
+        width: 25px;
+      }
+    }
+
+    .cadastroRapido {
+      background-color: #005aa91a;
+      border-radius: 0px 10px 10px 0px;
+      padding: 20px 0px 20px 20px;
+      border-left: 7px solid #004380;
+    }
+  }
+
+  hr {
+    margin-top: auto;
+    width: 100%;
+    height: 2px;
+    border: none;
+    background: #c2c6d3;
+  }
+
+  .buttonSair {
+    padding: 20px 0px 20px 35px;
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 25px;
+    }
+
+    button {
+      border: none;
+      background-color: #e1e2e9;
+      padding-left: 15px;
+      color: #93000a;
+      font-size: 15px;
+    }
+
+    button:active {
+      color: black;
+    }
+  }
+}
+
+header {
+  padding: 30px 20px 20px 25px;
+
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 2px solid #c2c6d3;
+  h2 {
+    font-size: 25px;
+    color: #004380;
+  }
+
+  hr {
+    width: 2px;
+    height: 40px;
+    margin-right: 20px;
+    border: none;
+    background: #c2c6d3;
+    margin-left: 20px;
+  }
+
+  .perfilusuario {
+    display: flex;
+    margin-left: auto;
+
+    padding-right: 20px;
+
+    p {
+      padding-left: 42px;
+    }
+  }
+}
+
+.ParteCentral {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+
+  .conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 100px;
+
+    h1 {
+      color: #004380;
+    }
+    .barraBusca {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      border: 1px solid #c2c6d3;
+      border-radius: 12px;
+      width: 80%;
+      height: 92px;
+      margin-top: 50px;
+
+      input {
+        background-color: rgba(242, 243, 250, 1);
+        height: 50px;
+        width: 900px;
+        margin: 0px 20px;
+        border-radius: 8px;
+        border: 1px solid #c2c6d3;
+        padding: 0 40px;
+
+        font-size: 20px;
+        background-image: url(../Teste-senac2/Imagem/Icon-lupa.svg);
+        background-repeat: no-repeat;
+        background-position: 10px;
+      }
+
+      div {
+        select {
+          padding-left: 10px;
+          background-color: rgba(242, 243, 250, 1);
+          width: 100px;
+          height: 70px;
+          border-radius: 8px;
+          border: none;
+          font-size: 15px;
+          font-family: "Inter", sans-serif;
+          font-weight: 400;
+          font-style: regular;
+          margin-right: 10px;
+        }
+        button {
+          background-color: #004380;
+          color: #ffff;
+          width: 150px;
+          height: 70px;
+          border-radius: 8px;
+          border: none;
+          font-size: 15px;
+          font-family: "Inter", sans-serif;
+          font-weight: 700;
+          font-style: bold;
+        }
+      }
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+
+  .partedebaixo {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: stretch;
+    gap: 50px;
+
+    .parteInfo {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      border-radius: 12px;
+      border: none;
+
+      font-family: "Inter", sans-serif;
+
+      div {
+        border-radius: 8px;
+        border: none;
+        font-family: "Inter", sans-serif;
+
+        width: 585px;
+      }
+      .textoinfo {
+        display: flex;
+        align-items: start;
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid #c2c6d3;
+        border-radius: 12px;
+
+        img {
+          padding: 10px 0px 0px 15px;
+        }
+        div {
+          display: flex;
+          flex-direction: column;
+          align-items: baseline;
+          padding: 28px 0px 0px 20px;
+        }
+      }
+
+      .infoCarro {
+        height: 120px;
+        border: 1px solid #c2c6d3;
+        display: flex;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.8);
+        
+        .textoinfocarro{
+          display: flex;
+          
+          flex-direction: column;
+          align-items: baseline;
+          padding-left: 25px;
+        }
+
+        .naosei{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: rgba(236, 237, 245, 1);
+          border: 1px solid #c2c6d3;
+          height: 60%;
+          margin-right: 25px;
+          strong{
+            color: #004380;
+            font-size: 30px;
+           
+          }
+        }
+        img{
+          margin-left: 28px;
+          width: 100px;
+          background-color: rgba(0, 90, 169, 0.2);
+          padding: 20px;
+          border-radius: 15px;
+        }
+      }
+    }
+
+    .parteAzul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      background-color: rgba(0, 67, 128, 1);
+      width: 585px;
+      color: #fff;
+      border-radius: 8px;
+
+      font-family: "Inter", sans-serif;
+
+      h2 {
+        font-size: 17px;
+        font-weight: 700;
+      }
+      strong {
+        font-size: 60px;
+        padding-bottom: 10px;
+      }
+      div {
+        p {
+          padding-left: 10px;
+        }
+        display: flex;
+      }
+    }
+  }
+
+  input:focus {
+    outline: none;
+  }
+}
