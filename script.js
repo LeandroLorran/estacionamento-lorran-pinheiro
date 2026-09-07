@@ -9,3 +9,8 @@ function entrar() {
       "Usuário ou senha incorretos!";
   }
 }
+
+function sair(){
+  window.location.href = "../index.html";
+
+}
