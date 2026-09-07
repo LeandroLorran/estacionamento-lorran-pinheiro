@@ -35,20 +35,22 @@
         <p>Gestão de Estacionamento</p>
 
         <label>CPF ou CNH</label>
-        <input type="text" placeholder="000.000.000-00" />
+        <input type="text"  id="usuario" placeholder="000.000.000-00" />
 
         <label>Senha</label>
-        <input type="password" placeholder="••••••••" />
+        <input type="password" id="senha" placeholder="••••••••" />
 
         <div class="lembrar">
           <input type="checkbox" />
           <span>Lembrar neste dispositivo</span>
         </div>
 
-        <button onclick="window.location.href = 'pages/cadastro.html'">Entrar</button>
-
+        <button onclick="entrar()">Entrar</button>
+        <p id="mensagem"></p>
         <small>Todos os direitos reservados.</small>
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
