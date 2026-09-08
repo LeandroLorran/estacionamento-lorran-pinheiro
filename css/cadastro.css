@@ -15,6 +15,7 @@ aside {
   display: flex;
   flex-direction: column;
   border-right: 3px solid #c2c6d3;
+  box-shadow: 1px 1px 3px 0px #c2c6d3;
 
   width: 25%;
   min-height: 100vh;

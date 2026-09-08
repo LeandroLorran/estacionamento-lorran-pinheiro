@@ -12,11 +12,12 @@ body {
 }
 
 aside {
+  position: fixed;
   display: flex;
   flex-direction: column;
   border-right: 3px solid #c2c6d3;
   box-shadow: 1px 1px 3px 0px #c2c6d3;
-  width: 25%;
+  width: 479px;
   min-height: 100vh;
 
   .tituloAside {
@@ -116,8 +117,8 @@ aside {
 }
 
 header {
-  padding: 30px 20px 20px 25px;
-
+  padding: 30px 20px 20px 24px;
+  margin-left: -120px;
   display: flex;
   align-items: center;
   width: 100%;
@@ -149,6 +150,7 @@ header {
 }
 
 .ParteCentral {
+  margin-left: 600px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;

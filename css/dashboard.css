@@ -6,17 +6,18 @@ body {
 .pagina {
   display: flex;
   align-items: flex-start;
-  width: 100%;
+  width: 100vw;
   min-height: 100vh;
   background-color: #e1e2e9;
 }
 
 aside {
+  position: fixed;
   display: flex;
   flex-direction: column;
   border-right: 3px solid #c2c6d3;
   box-shadow: 1px 1px 3px 0px #c2c6d3;
-  width: 25%;
+  width: 479px;
   min-height: 100vh;
 
   .tituloAside {
@@ -116,18 +117,19 @@ aside {
 }
 
 header {
-  padding: 30px 20px 20px 25px;
-
   display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
+  padding: 30px 20px 20px 24px;
+  margin-left: -120px;
   border-bottom: 2px solid #c2c6d3;
   h2 {
     font-size: 25px;
     color: #004380;
   }
 
-  hr {
+  .linhaPerfil {
     width: 2px;
     height: 40px;
     margin-right: 20px;
@@ -136,23 +138,31 @@ header {
     margin-left: 20px;
   }
 
-  .perfilusuario {
-    display: flex;
-    margin-left: auto;
+  .perfilUsuariomargin {
+    position: relative;
+    left: 140px;
 
-    padding-right: 20px;
+    .perfilusuario {
+      display: flex;
+      padding-right: 20px;
+      p {
+        padding-left: 42px;
+      }
+      img {
+        padding-left: 20px;
 
-    p {
-      padding-left: 42px;
+        height: 40px;
+      }
     }
   }
 }
 
 .ParteCentral {
+  margin-left: 600px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 100%;
+  width: 100vw;
   min-height: 100vh;
 
   .tituloConteudo {
@@ -179,33 +189,32 @@ header {
         padding: 20px 25px;
         width: 23%;
         height: 220px;
+        
 
-        .cardPartCima{
+        .cardPartCima {
           display: flex;
           justify-content: space-between;
           align-items: center;
           padding-bottom: 20px;
         }
 
-        h3{
+        h3 {
           font-weight: 500;
         }
-        .cardPartBaixo
-        {
+        .cardPartBaixo {
           display: flex;
           flex-direction: column;
           align-items: baseline;
 
-
-          strong{
+          strong {
             font-size: 50px;
           }
         }
-        img{
+        img {
           width: 60px;
         }
 
-        p{
+        p {
           margin: -20px 25px 0px 0px;
           border-radius: 10px;
           padding: 10px;
@@ -213,46 +222,132 @@ header {
           font-weight: 700;
         }
 
-        strong{
+        strong {
           font-weight: 700;
           color: black;
         }
       }
-      
 
-      .cardVagalivre{
-        p{
-          
+      .cardVagalivre {
+        p {
           color: rgba(22, 163, 74, 1);
-          
         }
 
-        strong{
+        strong {
           color: rgba(0, 67, 128, 1);
-      
         }
       }
 
-      .cardEstacionados{
-        p{
-          
+      .cardEstacionados {
+        p {
           color: rgba(66, 71, 81, 1);
-          
         }
-
       }
 
-      .cardEntradas{
-        p{
-          
+      .cardEntradas {
+        p {
           color: rgba(0, 67, 128, 1);
-          
         }
-
       }
+    }
+  }
 
+  .parteMeio {
+    display: flex;
+   
+    gap: 30px;
+    padding: 0px 0px 30px 30px;
+
+    .alertasAtivos {
+      width: 620px;
     }
 
+    .cabecalho {
+      height: 16%;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      display: flex;
+      padding: 25px 25px 25px 25px;
+      background-color: #F2F3FA;
+      border-bottom: 2px solid rgba(194, 198, 211, 1);
+      border-radius: 20px 20px 0px 0px;
+      
+      .numeroNotificao {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        background-color: #ba1a1a;
+        color: white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+      }
+
+      h3{
+          color: #191C21;
+          font-size: 30px;
+          font-weight: 500;
+      }
+    }
+
+    .divstatus {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 60%;
+      height: 500px;
+      background-color: #eef0f5;
+      border: 2px solid rgba(194, 198, 211, 1);
+      border-radius: 20px;
+      
+      .cardAndar_1{
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #F9F9FF;
+        width: 90%;
+        height: 40%;
+        padding: 30px 0px 0px 30px;
+
+        .textos{
+          display: flex;
+          justify-content: space-between;
+
+          .logoCard{
+            display: flex;
+            padding-right: 360px;
+          }
+        }
+
+        .vagasLivres{
+          padding-top: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 95%;
+        }
+      }
+
+      .slider{
+        margin-top: 30px;
+        width: 95%;
+        height: 20px;
+        border-radius: 20px;
+        background-color: #E1E2E9;
+        
+        .sliderDentro{
+           border-radius: 20px;
+          width: 80%;
+          height: 20px;
+          background-color: #004380;
+        }
+      }
+    }
     
   }
+
+  
 }
