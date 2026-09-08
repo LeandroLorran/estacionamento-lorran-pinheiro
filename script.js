@@ -9,12 +9,10 @@ function entrar() {
       "Digite nos campos vazios";
     return;
   } else if (usuario === "") {
-    document.getElementById("mensagem").textContent =
-      "Digite seu CPF ou CNH";
+    document.getElementById("mensagem").textContent = "Digite seu CPF ou CNH";
     return;
   } else if (senha === "") {
-    document.getElementById("mensagem").textContent =
-      "Digite a senha";
+    document.getElementById("mensagem").textContent = "Digite a senha";
     return;
   } else {
     document.getElementById("mensagem").textContent =
@@ -44,4 +42,23 @@ function buscaCnhOuplaca() {
   } else if (valorSelect === "2") {
     alert("Placa não consta no sistema");
   }
+}
+
+function mostrarElementos(resolvido, alta, media, baixa) {
+  document.getElementById("resolvido").style.display = resolvido;
+  document.getElementById("altaPrioridade").style.display = alta;
+  document.getElementById("mediaPrioridade").style.display = media;
+  document.getElementById("baixaPrioridade").style.display = baixa;
+}
+
+function BT_Todos() {
+  mostrarElementos("block", "block", "block", "block");
+}
+
+function BT_Pendentes() {
+  mostrarElementos("none", "block", "block", "block");
+}
+
+function BT_Resolvidos() {
+  mostrarElementos("block", "none", "none", "none");
 }

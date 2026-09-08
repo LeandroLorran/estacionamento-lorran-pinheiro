@@ -121,13 +121,15 @@
             </div>
 
             <div class="botoesAtalho">
-              <button class="botoes">Todos</button>
-              <button class="botoes">Pendentes</button>
-              <button class="botoes">Resolvidos</button>
+              <button id="botaoTodos"  class="botoes" onclick="BT_Todos()">Todos</button>
+
+              <button id="botaoPendentes" class="botoes" onclick="BT_Pendentes()">Pendentes</button>
+
+              <button id="botaoResolvidos"  onclick="BT_Resolvidos()" class="botoes">Resolvidos</button>
             </div>
 
             <div class="divNotificacoes">
-              <div class="notificacao1 notificacao">
+              <div class="notificacao1 notificacao " id="altaPrioridade">
                 <div class="textoNotificao">
                   <div>
                     <h4>ALTA PRIORIDADE</h4>
@@ -163,7 +165,7 @@
                 </div>
               </div>
 
-              <div class="notificacao2 notificacao">
+              <div class="notificacao2 notificacao" id="mediaPrioridade">
                 <div class="textoNotificao">
                   <div>
                     <h4>MÉDIA PRIORIDADE</h4>
@@ -194,7 +196,7 @@
                 </div>
               </div>
 
-              <div class="notificacao3 notificacao">
+              <div class="notificacao3 notificacao" id="resolvido">
                 <div class="textoNotificao">
                   <div>
                     <h4>RESOLVIDO</h4>
@@ -223,7 +225,7 @@
                
               </div>
 
-              <div class="notificacao4 notificacao">
+              <div class="notificacao4 notificacao" id="baixaPrioridade">
                 <div class="textoNotificao">
                   <div>
                     <h4>BAIXA PRIORIDADE</h4>

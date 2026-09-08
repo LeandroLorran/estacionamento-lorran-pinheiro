@@ -217,6 +217,12 @@ header {
         font-family: "Inter", sans-serif;
         font-weight: 500;
         font-size: 16px;
+        transition: 0.3s;
+      }
+      
+      .botoes:hover{
+        background-color: rgba(0, 67, 128, 1);
+        color: #fff;
       }
     }
 
@@ -338,14 +344,14 @@ header {
           padding: 15px 0px 0px 0px;
         }
 
-        h4{
+        h4 {
           background-color: rgba(66, 71, 81, 0.1);
         }
       }
 
-      .notificacao4{
+      .notificacao4 {
         border-left: 10px solid rgba(0, 90, 169, 1);
-        h4{
+        h4 {
           background-color: rgba(0, 90, 169, 0.1);
         }
       }
