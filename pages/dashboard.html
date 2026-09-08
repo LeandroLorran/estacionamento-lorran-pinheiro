@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alertas - Senac Parking</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jockey+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main>
+      <div class="pagina">
+        <aside>
+          <div class="tituloAside">
+            <div class="imagemtituloaside">
+              <img src="../Teste-senac2/Imagem/Icon-carro-branco.svg" alt="" />
+            </div>
+
+            <div class="nomeLogoAside">
+              <h3>Senac Cep</h3>
+              <h4>PAPALÉO PARKING</h4>
+            </div>
+          </div>
+          <nav>
+            <div class="inconsNav cadastroRapido">
+              <img src="../Teste-senac2/Imagem/Icon-dashboard-azul.svg" alt="" />
+              <a href="#">Dashboard</a>
+            </div>
+            <div class="inconsNav">
+              <img
+                src="../Teste-senac2/Imagem/Icon-consultar-usuarios.svg"
+                alt=""
+              />
+              <a href="consultaUsuario.html">Consulta de Usuário</a>
+            </div>
+            <div class="inconsNav">
+              <img
+                src="../Teste-senac2/Imagem/Icon-registrar-entradas-e-saidas.svg"
+                alt=""
+              />
+              <a href="#">Registro de Entrada/Saída</a>
+            </div>
+            <div class="inconsNav">
+              <img
+                src="../Teste-senac2/Imagem/Icon-cadastro-rapido-cinza.svg"
+                alt=""
+              />
+              <a href="cadastro.html">Cadastro Rápido</a>
+            </div>
+            <div class="inconsNav">
+              <img src="../Teste-senac2/Imagem/Icon-historico.svg" alt="" />
+              <a href="#">Histórico</a>
+            </div>
+            <div class="inconsNav ">
+              <img src="../Teste-senac2/Imagem/Icon-alertas.svg" alt="" />
+              <a href="#">Alertas</a>
+            </div>
+          </nav>
+
+          <hr />
+          <div class="buttonSair">
+            <img src="../Teste-senac2/Imagem/Icon-sair.svg" alt="" />
+            <button onclick="sair()" class="buttonSair">Sair</button>
+          </div>
+        </aside>
+        <div class="ParteCentral">
+          <header>
+            <h2>Gestão de Estacionamento</h2>
+
+            <div class="perfilusuario">
+              <hr />
+              <div>
+                <h3>Admin Portaria</h3>
+                <p>OPERADOR</p>
+              </div>
+            </div>
+            <img
+              src="../Teste-senac2/Imagem/Foto de Perfil do Administrador.png"
+              alt=""
+            />
+          </header>
+
+          <div class="conteudo">
+            <div class="tituloConteudo">
+              <h1>Visão Geral da Portaria</h1>
+              <p>
+                Monitoramento em tempo real do fluxo de veículos.
+              </p>
+            </div>
+            <div class="divCards">
+              <div class="card cardVagalivre">
+                <div class="cardPartCima">
+                  <img src="../Teste-senac2/Imagem/Icon-Parking.svg" alt="" />
+                  <p>ESTÁVEL</p>
+                </div>
+                
+                <div class="cardPartBaixo">
+                  <h3>TOTAL DE VAGAS LIVRES</h3>
+                  <strong class="numero">42</strong>
+                </div>
+              </div>
+
+              <div class="card cardEstacionados">
+                <div class="cardPartCima">
+                  <img src="../Teste-senac2/Imagem/Icon-Estacionadoos.svg" alt="" />
+                  <p>82% OCUPADO</p>
+                </div>
+                
+                <div class="cardPartBaixo">
+                  <h3>VEÍCULOS ESTACIONADOS</h3>
+                  <strong class="numero">158</strong>
+                </div>
+              </div>
+
+              <div class="card cardEntradas">
+                <div class="cardPartCima">
+                  <img src="../Teste-senac2/Imagem/Icon-Entradas.svg" alt="" />
+                  <p>+12% HOJE</p>
+                </div>
+                
+                <div class="cardPartBaixo">
+                  <h3>ENTRADAS HOJE</h3>
+                  <strong class="numero">245</strong>
+                </div>
+              </div>
+
+              <div class="card cardSaidas">
+                <div class="cardPartCima">
+                  <img src="../Teste-senac2/Imagem/Icon-Saidas.svg" alt="" />
+                  <p>FLUXO NORMAL</p>
+                </div>
+                
+                <div class="cardPartBaixo">
+                  <h3>SAÍDAS HOJE</h3>
+                  <strong class="numero">203</strong>
+                </div>
+              </div>
+
+            </div> 
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
