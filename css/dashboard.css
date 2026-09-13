@@ -1,10 +1,10 @@
 body {
   color: #424751;
   font-family: "Inter", sans-serif;
+  overflow-x: hidden;
 }
 
 .pagina {
-  
   display: flex;
   align-items: flex-start;
   width: 100vw;
@@ -159,7 +159,7 @@ header {
 }
 
 .ParteCentral {
-   margin-left: 600px;
+  margin-left: 600px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -180,14 +180,13 @@ header {
     margin-left: -80px;
     padding: 0px 0px 0px 30px;
     gap: 30px 0px;
-    
+
     .divCards {
       display: flex;
 
       gap: 30px;
 
-
-      h3{
+      h3 {
         font-size: 18px;
         padding-bottom: 15px;
       }
@@ -208,7 +207,6 @@ header {
           padding-bottom: 20px;
         }
 
-     
         .cardPartBaixo {
           display: flex;
           flex-direction: column;
@@ -264,14 +262,12 @@ header {
     display: flex;
     width: 100%;
     gap: 0px 30px;
-   
 
-    height: 500px;
+    height: 660px;
     .ST {
       border: 2px solid rgba(194, 198, 211, 1);
       border-radius: 20px;
-      background-color: #FFFFFF;
-      
+      background-color: #ffffff;
     }
 
     .divStatus {
@@ -279,62 +275,15 @@ header {
       flex-direction: column;
       align-items: center;
       width: 65%;
-      .part1{
-        display: flex;
-        align-items: center;
-       
-        margin-top: 30px;
-        width: 80%;
-        background-color: #F9F9FF;
-        border-radius: 10px;
-
-        img{
-          width: 35px;
-          margin: 20px 0px 20px 20px;
-        }
-
-        div{
-          
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          margin-left: 20px;
-          gap: 0px 10px;
-
-          h4{
-            font-size: 18px;
-            color: #004380;
-          }
-
-          p{
-            font-size: 15px;
-            color: #424751;
-          }
-        }
-
-        .afasta{
-          margin-left: 200px;
-          display: flex;
-          align-items: flex-end;
-          strong{
-            color:#004380;
-            font-size: 20px;
-          }
-        }
-      }
-
-      .slider{
-        margin-top: 30px;
-        background-color: black;
-        width: 80%;
-        height: 20px;
-      }
-      
     }
 
     .divAlerta {
-     
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       width: 32%;
+      height: 108%;
+      gap: 18px;
     }
 
     .divBordaSuperior {
@@ -357,7 +306,7 @@ header {
         font-size: 18px;
         font-weight: 700;
       }
-      p{
+      p {
         background-color: red;
         color: white;
         font-weight: 700;
@@ -370,24 +319,310 @@ header {
         font-size: 22px;
       }
 
-      img{
+      img {
         width: 30px;
       }
 
-      div{
+      div {
         display: flex;
         align-items: center;
         gap: 0px 20px;
       }
     }
+  }
+}
 
-    .CardAndar1{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 80%;
-     
+.part1 {
+  display: flex;
+  align-items: center;
+  margin: 10px 0px 10px 0px;
+  width: 100%;
+
+  border-radius: 10px;
+
+  img {
+    width: 35px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+    gap: 0px 10px;
+
+    h4 {
+      font-size: 18px;
+      color: #004380;
+    }
+
+    p {
+      font-size: 15px;
+      color: #424751;
+    }
+  }
+
+  .afasta {
+    margin-left: 350px;
+    display: flex;
+    align-items: flex-end;
+    .numero {
+      color: #004380;
+      font-size: 20px;
     }
   }
 }
+
+.CardAndar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 96%;
+  padding: 10px 25px 20px 25px;
+  background-color: #f9f9ff;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+
+.vagas {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 15px;
+
+  div {
+    display: flex;
+
+    img {
+      width: 12px;
+      margin-right: 5px;
+    }
+  }
+}
+
+.slider {
+  margin-top: 5px;
+  background-color: rgba(225, 226, 233, 1);
+  width: 100%;
+  height: 20px;
+  border-radius: 20px;
+  .slider-track {
+    width: 72.5%;
+    height: 100%;
+    background-color: #004380;
+    border-radius: inherit;
+  }
+}
+
+.slider-track2A {
+  border-radius: 20px;
+  width: 95%;
+  height: 100%;
+  background-color: rgba(255, 137, 40, 1);
+}
+
+.vagas2A {
+  color: rgb(151, 82, 24);
+  font-weight: 700;
+}
+
+.numero2A {
+  color: rgb(151, 82, 24);
+
+  font-size: 20px;
+}
+
+.cardAlerta {
+  display: flex;
+  align-items: flex-start;
+
+  justify-content: center;
+  width: 85%;
+  border-radius: 10px;
+  padding: 15px 0px;
+
+  h3,
+  p {
+    font-weight: 700;
+  }
+  h4 {
+    padding: 15px 0px;
+  }
+
+  img {
+    margin-right: 15px;
+    width: 36px;
+  }
+}
+
+.cardAlerta1 {
+  background-color: rgba(255, 218, 214, 0.2);
+  border-left: 6px solid rgba(186, 26, 26, 1);
+  h3 {
+    color: rgba(147, 0, 10, 1);
+  }
+}
+
+.cardAlerta2 {
+  background-color: rgba(255, 137, 40, 0.1);
+  border-left: 6px solid rgba(150, 73, 0, 1);
+  h3 {
+    color: rgba(100, 47, 0, 1);
+  }
+}
+
+.cardAlerta3 {
+  background-color: rgba(0, 90, 169, 0.1);
+  border-left: 6px solid rgba(0, 67, 128, 1);
+  h3 {
+    color: rgba(0, 67, 128, 1);
+  }
+}
+
+.secao2 {
+  width: 100vw;
+  min-height: 540px;
+  background-color: #e1e2e9;
+
+  .conteudoSecao2 {
+    margin-left: 600px;
+    display: flex;
+    align-items: stretch;
+    gap: 30px;
+    .registros {
+      display: flex;
+      flex-direction: column;
+
+      margin-left: -80px;
+      padding: 80px 0px 0px 30px;
+      text-align: center;
+
+      table {
+        background-color: white;
+        width: 100%;
+        border: 1px solid rgba(194, 198, 211, 1);
+        border-collapse: collapse;
+        th {
+          background-color: rgba(231, 232, 239, 1);
+          padding: 10px 25px;
+          font-weight: 700;
+        }
+        td {
+          border: none;
+          border-bottom: 1px solid rgba(194, 198, 211, 1);
+          padding: 25px 25px;
+        }
+
+        .horario {
+          font-weight: 400;
+          font-size: 18px;
+        }
+        .placa {
+          font-weight: 700;
+          font-style: bold;
+        }
+        .tipo {
+          div {
+            border-radius: 20px;
+            font-weight: 700;
+            padding: 4px 8px;
+          }
+
+          .mensa {
+            background-color: rgba(0, 67, 128, 0.1);
+            color: rgba(0, 67, 128, 1);
+          }
+
+          .visi {
+            background-color: rgba(150, 73, 0, 0.1);
+            color: rgba(150, 73, 0, 1);
+          }
+          .funci {
+            background-color: rgba(114, 54, 0, 0.1);
+            color: rgba(114, 54, 0, 1);
+          }
+        }
+
+        .status {
+          font-weight: 700;
+          img {
+            margin-right: 5px;
+          }
+        }
+        .verde {
+          color: rgba(22, 163, 74, 1);
+        }
+      }
+
+      .tituloTabela {
+        display: flex;
+        background-color: rgba(242, 243, 250, 1);
+        width: 100%;
+        padding: 20px 0px 15px 40px;
+        border-radius: 12px 12px 0px 0px;
+        border: 1px solid rgba(194, 198, 211, 1);
+      }
+    }
+  }
+}
+
+.AcaoTabela {
+  button {
+    border: none;
+    background: none;
+
+    img {
+      width: 3px;
+    }
+  }
+}
+
+.divRelatario {
+  padding-top: 80px;
+  width: 27.5%;
+
+  .conteudoRelatorio {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../Teste-senac2/Imagem/background-image-relatorio-semanal.png);
+    background-position: bottom;
+    background-color: rgba(0, 67, 128, 1);
+    border-radius: 20px;
+    width: 100%;
+    
+    padding: 67px 40px;
+    text-align: start;
+    h3{
+      color: white;
+      font-weight: 600;
+      font-size: 34px;
+    }
+
+    p{
+      color: rgba(185, 211, 255, 0.788);
+      font-weight: 400;
+      margin: 10px 0px 25px 0px;
+    }
+    button{
+      width: 100%;
+      height: 40px;
+      background-color: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      color: white;
+      border-radius: 4px;
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    img{
+      width: 34px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+
+
