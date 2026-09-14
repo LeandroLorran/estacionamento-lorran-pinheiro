@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Histórico - Senac Parking</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/historico.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jockey+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main>
+      <div class="pagina">
+        <aside>
+          <div class="tituloAside">
+            <div class="imagemtituloaside">
+              <img src="../Teste-senac2/Imagem/Icon-carro-branco.svg" alt="" />
+            </div>
+
+            <div class="nomeLogoAside">
+              <h3>Senac Cep</h3>
+              <h4>PAPALÉO PARKING</h4>
+            </div>
+          </div>
+          <nav>
+            <div class="inconsNav">
+              <img src="../Teste-senac2/Imagem/Icon-dashboard.svg" alt="" />
+              <a href="dashboard.html">Dashboard</a>
+            </div>
+            <div class="inconsNav">
+              <img
+                src="../Teste-senac2/Imagem/Icon-consultar-usuarios.svg"
+                alt=""
+              />
+              <a href="consultaUsuario.html">Consulta de Usuário</a>
+            </div>
+            <div class="inconsNav">
+              <img
+                src="../Teste-senac2/Imagem/Icon-registrar-entradas-e-saidas.svg"
+                alt=""
+              />
+              <a href="#">Registro de Entrada/Saída</a>
+            </div>
+            <div class="inconsNav">
+              <img
+                src="../Teste-senac2/Imagem/Icon-cadastro-rapido-cinza.svg"
+                alt=""
+              />
+              <a href="cadastro.html">Cadastro Rápido</a>
+            </div>
+            <div class="inconsNav cadastroRapido">
+              <img
+                src="../Teste-senac2/Imagem/Icon-historico-azul.svg"
+                alt=""
+              />
+              <a href="#">Histórico</a>
+            </div>
+            <div class="inconsNav">
+              <img src="../Teste-senac2/Imagem/Icon-alertas.svg" alt="" />
+              <a href="alerta.html">Alertas</a>
+            </div>
+          </nav>
+
+          <hr />
+          <div class="buttonSair">
+            <img src="../Teste-senac2/Imagem/Icon-sair.svg" alt="" />
+            <button onclick="sair()" class="buttonSair">Sair</button>
+          </div>
+        </aside>
+        <div class="ParteCentral">
+          <header>
+            <h2>Gestão de Estacionamento</h2>
+            <div class="perfilUsuariomargin">
+              <div class="perfilusuario">
+                <hr class="linhaPerfil" />
+                <div>
+                  <h3>Admin Portaria</h3>
+                  <p>OPERADOR</p>
+                </div>
+                <img
+                  src="../Teste-senac2/Imagem/Foto de Perfil do Administrador.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </header>
+
+          <div class="conteudo">
+            <div class="tituloConteudo">
+              <div>
+                <h1>Histórico de Acessos</h1>
+                <p>
+                  Monitoramento completo de entradas e saídas do estacionamento
+                  Papaléo.
+                </p>
+              </div>
+              <button>
+                <img
+                  src="../Teste-senac2/Imagem/Icon-download.svg"
+                  alt=""
+                />Exportar Relatório
+              </button>
+            </div>
+
+            <div class="divAtalho">
+              <div class="opcoesAtalho">
+                <div class="opcoesAtalhoCima">
+                  <p>PERÍODO:</p>
+                  <button>Hoje</button>
+                  <button>Últimos 7 dias</button>
+                  <hr />
+                  <p class="cate">CATEGORIAS:</p>
+                  <button>
+                    <img
+                      src="../Teste-senac2/Imagem/Icon-visitante.svg"
+                      alt=""
+                    />Visitantes
+                  </button>
+                  <button>
+                    <img
+                      src="../Teste-senac2/Imagem/Icon-alunos.svg"
+                      alt=""
+                    />Alunos
+                  </button>
+                  <button>
+                    <img
+                      src="../Teste-senac2/Imagem/Icon-funcionarios.svg"
+                      alt=""
+                    />Funcionários
+                  </button>
+                </div>
+                <div class="opcoesAtalhoData">
+                  <input type="date" />
+                  <h4>até</h4>
+                  <input type="date" />
+                </div>
+              </div>
+            </div>
+
+            <div class="divTable">
+              <table>
+                <tr class="tabelaTitulos">
+                  <th class="nomeCondutor">NOME DO CONDUTOR</th>
+                  <th>PLACA</th>
+                  <th>CATEGORIA</th>
+                  <th>ENTRADA</th>
+                  <th>SAÍDA</th>
+                  <th>PAVIMENTO</th>
+                  <th>STATUS</th>
+                </tr>
+
+                <tr class="linhas">
+                  <td class="nomeAcesso">
+                    <img
+                      src="../Teste-senac2/Imagem/Icon-foto-perfil.svg"
+                      alt=""
+                    />
+                    Ricardo Malta de Souza
+                  </td>
+                  <td class="placaAcesso"><div>BRA-2E19</div></td>
+                  <td class="CategoriaAcesso">Funcionário</td>
+                  <td class="EntradaAcesso">24 Mai, 08:14</td>
+                  <td class="SaidaAcesso saidaPatio">No Pátio</td>
+                  <td class="pavimentoAcesso">G1 - Sul</td>
+                  <td class="StatusAcesso">
+                    <div class="StatusAcessoAutorizado statu">
+                      <div class="bolinha bolinhaVerde"></div>
+                      AUTORIZADO
+                    </div>
+                  </td>
+                </tr>
+                <tr class="linhas">
+                  <td class="nomeAcesso">
+                    <img
+                      src="../Teste-senac2/Imagem/Icon-foto-perfil-2.svg"
+                      alt=""
+                    />
+                    Juliana Silva
+                  </td>
+                  <td class="placaAcesso"><div>KRT-4512</div></td>
+                  <td class="CategoriaAcesso">Visitante</td>
+                  <td class="EntradaAcesso">24 Mai, 09:30</td>
+                  <td class="SaidaAcesso">24 Mai, 11:20</td>
+                  <td class="pavimentoAcesso">G2 - Norte</td>
+                  <td class="StatusAcesso">
+                    <div class="StatusAcessoFinalizado statu">  <div class="bolinha bolinhaVermelha"></div>FINALIZADO</div>
+                  </td>
+                </tr>
+                <tr class="linhas">
+                  <td class="nomeAcesso">
+                    <img
+                      src="../Teste-senac2/Imagem/Icon-foto-perfil-3.svg"
+                      alt=""
+                    />
+                    Pedro Lucas Oliveira
+                  </td>
+                  <td class="placaAcesso"><div>OTM-0081</div></td>
+                  <td class="CategoriaAcesso">Aluno</td>
+                  <td class="EntradaAcesso">24 Mai, 12:45</td>
+                  <td class="SaidaAcesso saidaPatio">No Pátio</td>
+                  <td class="pavimentoAcesso">G1 - Central</td>
+                  <td class="StatusAcesso">
+                    <div class="StatusAcessoVerificacao statu">  <div class="bolinha bolinhaAmarela"></div>VERIFICAÇÃO</div>
+                  </td>
+                </tr>
+                <tr class="linhas">
+                  <td class="nomeAcesso">
+                    <img
+                      src="../Teste-senac2/Imagem/Icon-foto-perfil-4.svg"
+                      alt=""
+                    />
+                    Ana Carolina Mendes
+                  </td>
+                  <td class="placaAcesso"><div>QWE-3R44</div></td>
+                  <td class="CategoriaAcesso">Funcionário</td>
+                  <td class="EntradaAcesso">24 Mai, 07:55</td>
+                  <td class="SaidaAcesso">24 Mai, 17:30</td>
+                  <td class="pavimentoAcesso">G1 - Norte</td>
+                  <td class="StatusAcesso">
+                    <div class="StatusAcessoAutorizado statu">  <div class="bolinha bolinhaVerde"></div>FINALIZADO </div>
+                  </td>
+                </tr>
+                <tr class="linhaUltima">
+                  <td class="nomeAcesso">
+                    <img
+                      src="../Teste-senac2/Imagem/Icon-foto-perfil-5.svg"
+                      alt=""
+                    />
+                    Veículo Não Identificado
+                  </td>
+                  <td class="placaAcesso"><div>UNK-9999</div></td>
+                  <td class="CategoriaAcesso">Visitante</td>
+                  <td class="EntradaAcesso">24 Mai, 14:10</td>
+                  <td class="SaidaAcesso">24 Mai, 14:15</td>
+                  <td class="pavimentoAcesso">Portaria</td>
+                  <td class="StatusAcesso">
+                    <div class="StatusAcessoFinalizado statu">  <div class="bolinha bolinhaVermelha"></div>BLOQUEADO</div>
+                  </td>
+                </tr>
+              </table>
+              <div class="divParteBaixo">
+                <p>Exibindo 1-10 de 142 registros</p>
+                <div class="botoes">
+                  <button class="seta"><</button>
+                  <button>1</button>
+                  <button>2</button>
+                  <button>3</button>
+                  <button class="pontinhos">...</button>
+                  <button>15</button>
+                  <button class="seta">></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="secao2">
+        <div class="divCard">
+          <div class="card">
+            <div class="l1"><p>OCUPACÃO ATUAL</p><img src="../Teste-senac2/Imagem/Icon-carro-azul.svg" alt=""></div>
+            <div class="l2"><strong>142</strong><p>Vagas ocupadas</p></div>
+            <div class="barraAzul"><div class="filter"></div></div>
+          </div>
+           <div class="card">
+            <div class="l1"><p>ENTRADAS (HOJE)</p><img src="../Teste-senac2/Imagem/Icon-Entradas-verde.svg" alt=""></div>
+            <div class="l2"><strong>312</strong><p class="verde">+12% vs ontem</p></div>
+          </div>
+           <div class="card">
+            <div class="l1"><p>SAÍDAS (HOJE)&ensp;&ensp;&ensp;</p><img src="../Teste-senac2/Imagem/Icon-saida-laranja.svg" alt=""></div>
+            <div class="l2"><strong>170</strong><p>em movimento</p></div>
+          </div>
+           <div class="card">
+            <div class="l1"><p>SAÍDAS (HOJE)&ensp;&ensp;&ensp;</p><img src="../Teste-senac2/Imagem/Icon-alertas-ativos-card.svg" alt=""></div>
+            <div class="l2"><strong class="vermelho">03&ensp;</strong><p>pendentes</p></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
