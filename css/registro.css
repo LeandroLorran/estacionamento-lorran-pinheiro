@@ -183,10 +183,212 @@ header {
       transition: background-color 0.3s ease;
       background: none;
     }
+
+    .botaoClicacado {
+      background: #004380;
+      color: white;
+    }
   }
 }
 
-.botaoClicacado{
-  background: #004380;
-  color: white;
+.barraBusca {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid #c2c6d3;
+  border-radius: 12px;
+  width: 95%;
+  height: 92px;
+  margin-top: 50px;
+
+  input {
+    background-color: rgba(242, 243, 250, 1);
+    height: 65px;
+    width: 77%;
+    margin: 0px 20px;
+    border-radius: 8px;
+    border: 1px solid #c2c6d3;
+    padding: 0 40px;
+
+    font-size: 20px;
+    background-image: url(../Teste-senac2/Imagem/Icon-lupa.svg);
+    background-repeat: no-repeat;
+    background-position: 10px;
+  }
+
+  div {
+    select {
+      padding-left: 10px;
+      background-color: rgba(242, 243, 250, 1);
+      width: 100px;
+      height: 70px;
+      border-radius: 8px;
+      border: none;
+      font-size: 15px;
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      font-style: regular;
+      margin-right: 10px;
+    }
+    button {
+      background-color: #004380;
+      color: #ffff;
+      width: 150px;
+      height: 70px;
+      border-radius: 8px;
+      border: none;
+      font-size: 15px;
+      font-family: "Inter", sans-serif;
+      font-weight: 700;
+      font-style: bold;
+    }
+  }
+}
+
+.divConteudo {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  min-height: 900px;
+  margin-top: 50px;
+}
+
+.conteudoLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 35%;
+  height: 900px;
+
+  .conteudoLeftCima {
+    width: 100%;
+    height: 425px;
+  }
+
+  .conteudoLeftBaixo {
+    width: 100%;
+    height: 425px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 50px;
+    align-items: center;
+    .conteudoLB {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      border-radius: 8px;
+      width: 80%;
+    }
+
+    .conteudoLBA {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      width: 80%;
+      border-radius: 8px;
+      img {
+        width: 65px;
+      }
+    }
+
+    .conteudoLB1 {
+      padding: 25px;
+      background-color: rgba(236, 237, 245, 1);
+      border: 1px solid rgba(194, 198, 211, 1);
+      p {
+        font-size: 20px;
+        font-weight: 500;
+      }
+      strong {
+        color: #004380;
+        font-size: 30px;
+      }
+    }
+
+    .conteudoLB2 {
+
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 40px 20px 20px;
+        border-radius: 8px;
+        background-color: rgba(236, 237, 245, 1);
+        border: 1px solid rgba(194, 198, 211, 1);
+        width: 45%;
+        h4{
+          color: rgba(66, 71, 81, 1);
+          font-size: 16px;
+        }
+
+        p{
+         color: black; 
+         font-weight: 500;
+         font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+.conteudoRight {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 60%;
+  height: 900px;
+
+  .conteudoRightCima {
+    width: 100%;
+    height: 690px;
+  }
+
+  .conteudoRightButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 700;
+      font-size: 36px;
+      gap: 25px;
+      background-color: rgba(22, 163, 74, 1);
+      border: none;
+      border-radius: 18px;
+      width: 100%;
+      height: 120px;
+
+      box-shadow: 0px 10px 15px rgba(34, 197, 94, 0.2);
+      p {
+        font-size: 24px;
+      }
+
+      img {
+        width: 36px;
+      }
+    }
+
+    button:hover{
+      background-color: rgb(15, 109, 49);
+    }
+
+    .textoButton {
+      position: relative;
+      top: 25px;
+    }
+  }
+}
+
+.ab {
+  background-color: rgba(255, 255, 255, 0.93);
+  border-radius: 16px;
+  border: 2px solid rgba(200, 205, 212, 0.8);
 }

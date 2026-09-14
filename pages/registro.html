@@ -62,7 +62,7 @@
             </div>
             <div class="inconsNav">
               <img src="../Teste-senac2/Imagem/Icon-alertas.svg" alt="" />
-              <a href="#">Alertas</a>
+              <a href="alerta.html">Alertas</a>
             </div>
           </nav>
 
@@ -71,7 +71,6 @@
             <img src="../Teste-senac2/Imagem/Icon-sair.svg" alt="" />
             <button onclick="sair()" class="buttonSair">Sair</button>
           </div>
-
         </aside>
         <div class="ParteCentral">
           <header>
@@ -90,12 +89,66 @@
             />
           </header>
 
-           <div class="botoesSE">
-            <button class="botaoEntrada">Entrada</button>
+          <div class="botoesSE">
+            <button class="botaoEntrada botaoClicacado">Entrada</button>
             <button class="botaoSaida">Saída</button>
           </div>
+
+          <div class="barraBusca">
+            <input
+              id="consultaInput"
+              type="busca"
+              placeholder="Digite CNH ou Placa (ex: ABC1234)..."
+            />
+
+            <div>
+              <select name="busca" id="busca">
+                <option value="1">CNH</option>
+
+                <option value="2">PLACA</option>
+              </select>
+
+              <button onclick="buscaCnhOuplaca()">Consultar</button>
+            </div>
+          </div>
+
+          <div class="divConteudo">
+            <div class="conteudoLeft">
+              <div class="conteudoLeftCima ab"></div>
+              <div class="conteudoLeftBaixo ab">
+                <div class="conteudoLBA">
+                <img src="../Teste-senac2/Imagem/Icon-carro-borda.svg" alt="">
+                <div>
+                  <h3>Dados do Veículo</h3>
+                  <p>Identificado via OCR</p>
+                </div>
+                </div>
+                <div class="conteudoLB conteudoLB1"><p>Placa</p><strong>BRA-2E19</strong></div>
+                <div class="conteudoLB conteudoLB2">
+                  <div><h4>Modelo</h4><p>Toyota</p><p>Corolla</p></div>
+                  <div><h4>COR</h4><p>Prata</p><p>Metálico</p></div>
+                </div>
+              </div>
+            </div>
+            <div class="conteudoRight">
+              <div class="conteudoRightCima ab"></div>
+              <div class="conteudoRightButton">
+                <button>
+                  <img
+                    src="../Teste-senac2/Imagem/Icon-registra-button.svg"
+                    alt=""
+                  />REGISTRAR ENTRADA
+                  <p>></p>
+                </button>
+
+                <p class="textoButton">
+                  Ao clicar em registrar, o ticket será impresso automaticamente
+                  na estação 04.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        
       </div>
     </main>
 
