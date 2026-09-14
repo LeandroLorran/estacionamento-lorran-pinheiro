@@ -17,7 +17,7 @@ aside {
   flex-direction: column;
   border-right: 3px solid #c2c6d3;
   box-shadow: 1px 1px 3px 0px #c2c6d3;
-  width: 479px;
+  width: 382.88px;
   min-height: 100vh;
 
   .tituloAside {
@@ -117,18 +117,19 @@ aside {
 }
 
 header {
-  padding: 30px 20px 20px 24px;
-  margin-left: -120px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
+  padding: 30px 20px 20px 24px;
+  margin-left: -15px;
   border-bottom: 2px solid #c2c6d3;
   h2 {
     font-size: 25px;
     color: #004380;
   }
 
-  hr {
+  .linhaPerfil {
     width: 2px;
     height: 40px;
     margin-right: 20px;
@@ -150,21 +151,21 @@ header {
 }
 
 .ParteCentral {
-  margin-left: 600px;
+  margin-left: 400px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   width: 100%;
   min-height: 100vh;
 
   .botoesSE {
-    background-color: #F2F3FA;
-    margin-left: 400px;
+    background-color: #f2f3fa;
+    padding: 0px 5px;
     display: flex;
     gap: 20px;
     margin-top: 20px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 35%;
     height: 80px;
     border-radius: 50px;
@@ -172,6 +173,7 @@ header {
     .botaoSaida {
       color: black;
       padding: 10px 20px;
+      width: 60%;
       font-size: 16px;
       border: none;
       border-radius: 5px;
@@ -179,22 +181,12 @@ header {
       padding: 25px 75px;
       border-radius: 50px;
       transition: background-color 0.3s ease;
-       background: none;
+      background: none;
     }
-
-  
-
-    .botaoEntrada:hover{
-      background:#004380;
-      color: white;
-      
-    }
-
-    .botaoSaida:hover {
-      background: #004380;
-       color: white;
-      
-    }
-
   }
+}
+
+.botaoClicacado{
+  background: #004380;
+  color: white;
 }
