@@ -261,8 +261,50 @@ header {
   height: 900px;
 
   .conteudoLeftCima {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
     width: 100%;
     height: 425px;
+
+    .cnhdoc {
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .validadeCnh {
+      width: 80%;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    hr {
+      width: 80%;
+      border: 1px solid #c2c6d3;
+    }
+
+    h3 {
+      color: black;
+      font-size: 28px;
+    }
+
+    img {
+      width: 40%;
+      height: 200px;
+      margin-bottom: -30px;
+    }
+
+    .docVisitante {
+      color: #191c21;
+    }
+    .dataValidadeCnh {
+      color: #004380;
+    }
   }
 
   .conteudoLeftBaixo {
@@ -308,7 +350,6 @@ header {
     }
 
     .conteudoLB2 {
-
       div {
         display: flex;
         flex-direction: column;
@@ -318,15 +359,15 @@ header {
         background-color: rgba(236, 237, 245, 1);
         border: 1px solid rgba(194, 198, 211, 1);
         width: 45%;
-        h4{
+        h4 {
           color: rgba(66, 71, 81, 1);
           font-size: 16px;
         }
 
-        p{
-         color: black; 
-         font-weight: 500;
-         font-size: 20px;
+        p {
+          color: black;
+          font-weight: 500;
+          font-size: 20px;
         }
       }
     }
@@ -341,6 +382,8 @@ header {
   height: 900px;
 
   .conteudoRightCima {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 690px;
   }
@@ -376,7 +419,7 @@ header {
       }
     }
 
-    button:hover{
+    button:hover {
       background-color: rgb(15, 109, 49);
     }
 
@@ -391,4 +434,127 @@ header {
   background-color: rgba(255, 255, 255, 0.93);
   border-radius: 16px;
   border: 2px solid rgba(200, 205, 212, 0.8);
+}
+
+.conteudoRightCima {
+  padding: 50px 0px 0px 0px;
+  align-items: center;
+  gap: 50px;
+}
+
+.parteCimaVaga {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+
+  h3 {
+    color: black;
+    font-weight: 700;
+    font-size: 36px;
+  }
+  .live {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #004380;
+    color: #ffffff;
+    font-weight: 700;
+    height: 20px;
+    padding: 15px;
+    border-radius: 9999px;
+  }
+}
+
+.cardsVaga {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 30px;
+}
+.card {
+  border-radius: 18px;
+  height: 200px;
+  padding: 35px 30px 0px 30px;
+}
+
+.card1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  background: linear-gradient(#004380, #005aa9);
+  color: white;
+  width: 45%;
+
+  strong {
+    font-size: 48px;
+    font-weight: 900;
+    padding-bottom: 20px;
+  }
+
+  p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    img {
+      width: 20px;
+    }
+  }
+}
+
+.card1::before {
+  content: "";
+  position: absolute;
+  inset: 0; 
+  background-image: url(../Teste-senac2/Imagem/Icon-Maps.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 90px;
+  opacity: 0.1; 
+  z-index: 0;
+}
+.card2 {
+  background-color: #e7e8ef;
+  color: black;
+  border: 2px solid #c2c6d3;
+  width: 45%;
+}
+
+.divCima{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50%;
+  .numeros{ 
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    strong{
+      font-weight: 900;
+      font-size: 52px;
+    }
+
+    p{
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+
+  .porcetagem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: none ;
+    width: 25%;
+    height: 100%;
+    border: 4px solid #00438033;
+    border-radius: 9999px;
+  
+    p{
+      color: #004380;
+      font-weight: 700;
+      
+    }
+  }
 }

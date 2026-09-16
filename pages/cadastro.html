@@ -14,6 +14,8 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jockey+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <script def src="../validacao.js"></script>
   </head>
 
   <body>
@@ -104,98 +106,134 @@
 
             <hr />
 
-            <div class="inputdecima">
-              <label>Nome Completo</label>
-              <input
-                type="text"
-                class="nome"
-                placeholder="Ex: João da Silva Santos"
-              />
-              <div class="inputdecima2">
-                <div>
-                  <label>CNH (Documento)</label>
-                  <input type="cnh" class="escreve" placeholder="00000000000" />
+            <form id="formCadastro">
+              <div class="inputdecima">
+                <label for="nome">Nome Completo</label>
+                <input
+                  id="nome"
+                  name="nome"
+                  type="text"
+                  class="nome"
+                  placeholder="Ex: João da Silva Santos"
+      
+                />
+                <div class="inputdecima2">
+                  <div>
+                    <label for="cnh">CNH (Documento)</label>
+                    <input
+                      id="cnh"
+                      name="cnh"
+                      type="text"
+                      class="escreve"
+                      placeholder="00000000000"
+                    
+                    />
+                  </div>
+                  <div>
+                    <label for="telefone">Telefone / WhatsApp</label>
+                    <input
+                      id="telefone"
+                      name="telefone"
+                      type="tel"
+                      class="escreve"
+                      placeholder="(11) 99999-9999"
+                   
+                    />
+                  </div>
                 </div>
-                <div>
-                  <label>Telefone / WhatsApp</label>
+              </div>
+
+              <div class="info infodebaixo">
+                <img
+                  src="../Teste-senac2/Imagem/Icon-carro-azul.svg"
+                  alt="carro azul"
+                />
+                <h3>Dados do Veículo</h3>
+              </div>
+
+              <hr />
+
+              <div class="divDadosVeiculo">
+                <div class="labDadosVeiculo">
+                  <label for="placa">Placa</label>
                   <input
-                    type="telefone"
-                    class="escreve"
-                    placeholder="(11) 99999-9999"
+                    id="placa"
+                    name="placa"
+                    type="text"
+                    placeholder="ABC-1234"
+                    
+                  />
+                </div>
+
+                <div class="labDadosVeiculo">
+                  <label for="marca">Marca do veículo:</label>
+                  <select id="marca" name="marca" >
+                    <option value="">Selecione a marca</option>
+                    <option value="chevrolet">Chevrolet</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="ford">Ford</option>
+                    <option value="volkswagen">Volkswagen</option>
+                    <option value="toyota">Toyota</option>
+                    <option value="honda">Honda</option>
+                    <option value="hyundai">Hyundai</option>
+                    <option value="nissan">Nissan</option>
+                    <option value="renault">Renault</option>
+                    <option value="peugeot">Peugeot</option>
+                    <option value="citroen">Citroën</option>
+                    <option value="jeep">Jeep</option>
+                    <option value="bmw">BMW</option>
+                    <option value="mercedes">Mercedes-Benz</option>
+                    <option value="audi">Audi</option>
+                    <option value="yamaha">Yamaha</option>
+                    <option value="honda-motos">Honda</option>
+                    <option value="suzuki">Suzuki</option>
+                    <option value="kawasaki">Kawasaki</option>
+                    <option value="bmw-motos">BMW Motorrad</option>
+                    <option value="ducati">Ducati</option>
+                    <option value="triumph">Triumph</option>
+                    <option value="harley">Harley-Davidson</option>
+                  </select>
+                </div>
+                <div class="labDadosVeiculo">
+                  <label for="modelo">Modelo</label>
+                  <input
+                    id="modelo"
+                    name="modelo"
+                    type="text"
+                    placeholder="Ex: Gol, Civic, Corolla"
+                  
+                  />
+                </div>
+                <div class="labDadosVeiculo">
+                  <label for="cor">Cor</label>
+                  <input
+                    id="cor"
+                    name="cor"
+                    type="text"
+                    placeholder="Ex: Branco, Preto, Prata"
                   />
                 </div>
               </div>
-            </div>
 
-            <div class="info infodebaixo">
-              <img
-                src="../Teste-senac2/Imagem/Icon-carro-azul.svg"
-                alt="carro azul"
-              />
-              <h3>Dados do Veículo</h3>
-            </div>
-
-            <hr />
-
-            <div class="divDadosVeiculo">
-              <div class="labDadosVeiculo">
-                <label>Placa</label>
-                <input type="placa" placeholder="ABC-1234" />
+              <div class="divbutoes">
+                <button type="reset" class="botao1">Limpa Campos</button>
+                <button type="submit" class="botao2">
+                  Cadastrar Visitante
+                  <img
+                    src="../Teste-senac2/Imagem/Icon-Seta-Button.svg"
+                    alt=""
+                  />
+                </button>
               </div>
-
-              <div class="labDadosVeiculo">
-                <label for="marca">Marca do veículo:</label>
-
-                <select id="marca" name="marca">
-                  <option value="">Selecione a marca</option>
-
-                  <option value="chevrolet">Chevrolet</option>
-                  <option value="fiat">Fiat</option>
-                  <option value="ford">Ford</option>
-                  <option value="volkswagen">Volkswagen</option>
-                  <option value="toyota">Toyota</option>
-                  <option value="honda">Honda</option>
-                  <option value="hyundai">Hyundai</option>
-                  <option value="nissan">Nissan</option>
-                  <option value="renault">Renault</option>
-                  <option value="peugeot">Peugeot</option>
-                  <option value="citroen">Citroën</option>
-                  <option value="jeep">Jeep</option>
-                  <option value="bmw">BMW</option>
-                  <option value="mercedes">Mercedes-Benz</option>
-                  <option value="audi">Audi</option>
-
-                  <option value="yamaha">Yamaha</option>
-                  <option value="honda-motos">Honda</option>
-                  <option value="suzuki">Suzuki</option>
-                  <option value="kawasaki">Kawasaki</option>
-                  <option value="bmw-motos">BMW Motorrad</option>
-                  <option value="ducati">Ducati</option>
-                  <option value="triumph">Triumph</option>
-                  <option value="harley">Harley-Davidson</option>
-                </select>
-              </div>
-              <div class="labDadosVeiculo">
-                <label>Modelo</label>
-                <input type="modelo" placeholder="Ex: Gol, Civic, Corolla" />
-              </div>
-              <div class="labDadosVeiculo">
-                <label>Cor</label>
-                <input type="cor" placeholder="Ex: Branco, Preto, Prata" />
-              </div>
-            </div>
-
-            <div class="divbutoes">
-              <button class="botao1">Limpa Campos</button>
-              <button class="botao2">Cadastrar Visitante <img src="../Teste-senac2/Imagem/Icon-Seta-Button.svg" alt=""></button>
-            </div>
-
-           
+            </form>
           </div>
-           <footer>
-              <img src="../Teste-senac2/Imagem/Icon-!.svg" alt="">
-              <p>O visitante será automaticamente registrado no sistema como "Aguardando Entrada".</p>
-            </footer>
+          <footer>
+            <img src="../Teste-senac2/Imagem/Icon-!.svg" alt="" />
+            <p>
+              O visitante será automaticamente registrado no sistema como
+              "Aguardando Entrada".
+            </p>
+          </footer>
         </div>
       </div>
     </main>
