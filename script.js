@@ -24,6 +24,14 @@ function sair() {
   window.location.href = "../index.html";
 }
 
+function entrada() {
+  window.location.href = "registro.html";
+}
+
+function saida() {
+window.location.href ="registroSaida.html";
+}
+
 function buscaCnhOuplaca() {
   const valorSelect = document.getElementById("busca").value;
   const inputdaConsulta = document.getElementById("consultaInput").value;
