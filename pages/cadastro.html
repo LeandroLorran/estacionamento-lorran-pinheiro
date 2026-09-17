@@ -15,7 +15,7 @@
       rel="stylesheet"
     />
 
-    <script def src="../validacao.js"></script>
+   
   </head>
 
   <body>
@@ -106,7 +106,7 @@
 
             <hr />
 
-            <form id="formCadastro">
+            <form id="form">
               <div class="inputdecima">
                 <label for="nome">Nome Completo</label>
                 <input
@@ -115,7 +115,7 @@
                   type="text"
                   class="nome"
                   placeholder="Ex: João da Silva Santos"
-      
+                  required
                 />
                 <div class="inputdecima2">
                   <div>
@@ -123,10 +123,10 @@
                     <input
                       id="cnh"
                       name="cnh"
-                      type="text"
+                      type=""
                       class="escreve"
                       placeholder="00000000000"
-                    
+                      required
                     />
                   </div>
                   <div>
@@ -137,7 +137,7 @@
                       type="tel"
                       class="escreve"
                       placeholder="(11) 99999-9999"
-                   
+                      required
                     />
                   </div>
                 </div>
@@ -161,11 +161,11 @@
                     name="placa"
                     type="text"
                     placeholder="ABC-1234"
-                    
+                    required
                   />
                 </div>
 
-                <div class="labDadosVeiculo">
+                <div class="labDadosVeiculo" required>
                   <label for="marca">Marca do veículo:</label>
                   <select id="marca" name="marca" >
                     <option value="">Selecione a marca</option>
@@ -201,7 +201,7 @@
                     name="modelo"
                     type="text"
                     placeholder="Ex: Gol, Civic, Corolla"
-                  
+                    required
                   />
                 </div>
                 <div class="labDadosVeiculo">
@@ -211,6 +211,7 @@
                     name="cor"
                     type="text"
                     placeholder="Ex: Branco, Preto, Prata"
+                    required
                   />
                 </div>
               </div>
@@ -237,7 +238,7 @@
         </div>
       </div>
     </main>
-
+     <script src="../validacao.js"></script>
     <script src="../script.js"></script>
   </body>
 </html>
